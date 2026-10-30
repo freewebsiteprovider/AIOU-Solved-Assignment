@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matric Solved Assignments - AIOU Solved Assignments 2025</title>
+    <meta name="description" content="Download AIOU Matric solved assignments for all courses. Get assignment solutions for course codes 101-114, 200-210, 215, 217, 218-222, 240, 241, 242, 246, 247 English, 247 Urdu, 248 English, 248 Urdu, 251, 252, 257-260.">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-brown: #8B4513;
+            --light-brown: #A0522D;
+            --dark-brown: #654321;
+            --cream: #F5F5DC;
+            --white: #FFFFFF;
+            --light-gray: #F8F9FA;
+            --text-dark: #333333;
+            --text-light: #FFFFFF;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background-color: var(--light-gray);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary-brown) 0%, var(--dark-brown) 100%);
+            color: var(--white);
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo i {
+            margin-right: 10px;
+            font-size: 28px;
+        }
+        
+        .logo a {
+            color: var(--white);
+            text-decoration: none;
+        }
+        
+        /* Breadcrumb */
+        .breadcrumb {
+            background-color: var(--cream);
+            padding: 15px 0;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        
+        .breadcrumb a {
+            color: var(--primary-brown);
+            text-decoration: none;
+        }
+        
+        .breadcrumb span {
+            color: var(--dark-brown);
+        }
+        
+        /* Main Content */
+        .main-content {
+            padding: 40px 0;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .page-title {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            color: var(--primary-brown);
+        }
+        
+        .page-subtitle {
+            font-size: 1.2rem;
+            color: var(--light-brown);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Canvas Container */
+        .canvas-container {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--cream);
+        }
+        
+        .canvas-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: var(--primary-brown);
+            border-bottom: 2px solid var(--primary-brown);
+            padding-bottom: 10px;
+            font-size: 1.8rem;
+        }
+        
+        /* Assignment Table */
+        .assignment-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        
+        .assignment-table th {
+            background: linear-gradient(135deg, var(--primary-brown) 0%, var(--light-brown) 100%);
+            color: var(--white);
+            padding: 15px;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .assignment-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid var(--cream);
+            text-align: center;
+        }
+        
+        .assignment-table tr:nth-child(even) {
+            background-color: var(--light-gray);
+        }
+        
+        .assignment-table tr:hover {
+            background-color: rgba(139, 69, 19, 0.05);
+        }
+        
+        .course-code {
+            font-weight: 600;
+            color: var(--primary-brown);
+        }
+        
+        .download-link {
+            color: var(--light-brown);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        
+        .download-link:hover {
+            color: var(--primary-brown);
+            background-color: rgba(139, 69, 19, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        .no-assignment {
+            color: #999;
+            font-style: italic;
+        }
+        
+        /* Course Categories */
+        .course-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+        
+        .category-btn {
+            background: var(--cream);
+            color: var(--primary-brown);
+            border: 1px solid var(--light-brown);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .category-btn:hover {
+            background: var(--primary-brown);
+            color: var(--white);
+        }
+        
+        /* Instructions Section */
+        .instructions {
+            background: var(--cream);
+            border-radius: 10px;
+            padding: 25px;
+            margin-top: 40px;
+            border-left: 4px solid var(--primary-brown);
+        }
+        
+        .instructions h3 {
+            color: var(--primary-brown);
+            margin-bottom: 15px;
+        }
+        
+        .instructions ul {
+            margin-left: 20px;
+        }
+        
+        .instructions li {
+            margin-bottom: 8px;
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary-brown) 0%, var(--light-brown) 100%);
+            color: var(--white);
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary-brown);
+            color: var(--primary-brown);
+        }
+        
+        .btn-outline:hover {
+            background: var(--primary-brown);
+            color: var(--white);
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, var(--dark-brown) 0%, var(--primary-brown) 100%);
+            color: var(--white);
+            padding: 50px 0 20px;
+            margin-top: 60px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-section ul li a {
+            color: var(--cream);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-section ul li a:hover {
+            color: var(--white);
+            padding-left: 5px;
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: var(--cream);
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .page-title {
+                font-size: 1.8rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo {
+                margin-bottom: 10px;
+            }
+            
+            .assignment-table {
+                display: block;
+                overflow-x: auto;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .canvas-container {
+                padding: 20px;
+            }
+            
+            .assignment-table th, 
+            .assignment-table td {
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-graduation-cap"></i>
+                        AIOU Solved Assignments
+                    </a>
+                </div>
+                <div>
+                    <a href="index.html#contact" class="btn btn-outline">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a> > <a href="index.html#categories">Assignment Categories</a> > <span>Matric Solved Assignments</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1 class="page-title">Matric Solved Assignments 2025</h1>
+                <p class="page-subtitle">Download solved assignments for all Matric courses. Select your course code to download assignment solutions for Autumn 2025 and Spring 2025.</p>
+            </div>
+            
+            <!-- Course Categories -->
+            <div class="course-categories">
+                <a href="#compulsory" class="category-btn">Compulsory Subjects</a>
+                <a href="#science" class="category-btn">Science Group</a>
+                <a href="#arts" class="category-btn">Arts Group</a>
+                <a href="#elective" class="category-btn">Elective Subjects</a>
+            </div>
+            
+            <!-- Canvas Container -->
+            <div class="canvas-container">
+                <h2 class="canvas-title">Matric Assignment Solutions</h2>
+                
+                <!-- Assignment Table -->
+                <table class="assignment-table">
+                    <thead>
+                        <tr>
+                            <th>Course Code</th>
+                            <th>Assignment 1</th>
+                            <th>Assignment 2</th>
+                            <th>Assignment 3</th>
+                            <th>Assignment 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Compulsory Subjects -->
+                        <tr>
+                            <td colspan="5" style="background-color: var(--cream); text-align: center; font-weight: bold; color: var(--primary-brown);" id="compulsory">
+                                Compulsory Subjects
+                            </td>
+                        </tr>
+                        <!-- Course codes 101-114 -->
+                        <tr>
+                            <td class="course-code">101</td>
+                            <td><a href="https://drive.google.com/file/d/1_Hp-BmobaZelrHrTaJH8fkmUchMCKahO/view?usp=sharing" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">102</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">103</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">104</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">105</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">106</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">107</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">108</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">109</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">110</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">111</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">112</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">113</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">114</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        
+                        <!-- Science Group -->
+                        <tr>
+                            <td colspan="5" style="background-color: var(--cream); text-align: center; font-weight: bold; color: var(--primary-brown);" id="science">
+                                Science Group
+                            </td>
+                        </tr>
+                        <!-- Course codes 200-210 -->
+                        <tr>
+                            <td class="course-code">200</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">201</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">202</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">203</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">204</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">205</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">206</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">207</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">208</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">209</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">210</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        
+                        <!-- Arts Group -->
+                        <tr>
+                            <td colspan="5" style="background-color: var(--cream); text-align: center; font-weight: bold; color: var(--primary-brown);" id="arts">
+                                Arts Group
+                            </td>
+                        </tr>
+                        <!-- Course codes 215, 217, 218-222 -->
+                        <tr>
+                            <td class="course-code">215</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">217</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">218</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">219</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">220</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">221</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">222</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        
+                        <!-- Elective Subjects -->
+                        <tr>
+                            <td colspan="5" style="background-color: var(--cream); text-align: center; font-weight: bold; color: var(--primary-brown);" id="elective">
+                                Elective Subjects
+                            </td>
+                        </tr>
+                        <!-- Course codes 240, 241, 242, 246, 247 English, 247 Urdu, 248 English, 248 Urdu, 251, 252, 257-260 -->
+                        <tr>
+                            <td class="course-code">240</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">241</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">242</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">246</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">247 (English)</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">247 (Urdu)</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">248 (English)</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">248 (Urdu)</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">251</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">252</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">257</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">258</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">259</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                        <tr>
+                            <td class="course-code">260</td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                            <td><a href="#" class="download-link">Download</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <!-- Instructions Section -->
+                <div class="instructions">
+                    <h3>Important Instructions</h3>
+                    <ul>
+                        <li>All assignments are available in PDF format</li>
+                        <li>Download assignments according to your course code</li>
+                        <li>Use these solved assignments as reference material only</li>
+                        <li>Always create your own unique answers</li>
+                        <li>Submit assignments before the deadline to avoid penalties</li>
+                        <li>Contact us if you need help with any assignment</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="index.html#categories" class="btn">Back to All Categories</a>
+                <a href="index.html#contact" class="btn btn-outline">Get Help</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#categories">Assignment Categories</a></li>
+                        <li><a href="index.html#about">About AIOU</a></li>
+                        <li><a href="index.html#how-to">How to Submit</a></li>
+                        <li><a href="index.html#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="matric-assignments.html">Matric (SSC)</a></li>
+                        <li><a href="fa-fsc-assignments.html">FA / FSc</a></li>
+                        <li><a href="ba-bsc-assignments.html">BA / BSc</a></li>
+                        <li><a href="bed-assignments.html">B.Ed Programs</a></li>
+                        <li><a href="bs-assignments.html">BS Programs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><a href="https://wa.me/923558137077" target="_blank">WhatsApp: +92 355 8137077</a></li>
+                        <li><a href="mailto:azarhussin44@gmail.com">Email: azarhussin44@gmail.com</a></li>
+                        <li>Mon - Fri: 9AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 AIOU Solved Assignments. All rights reserved.</p>
+                <p>This website is not affiliated with Allama Iqbal Open University. It is an independent educational resource.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
